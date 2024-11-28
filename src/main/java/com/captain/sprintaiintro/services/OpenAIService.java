@@ -2,6 +2,7 @@ package com.captain.sprintaiintro.services;
 
 import com.captain.sprintaiintro.model.Answer;
 import com.captain.sprintaiintro.model.GetCapitalRequest;
+import com.captain.sprintaiintro.model.GetCapitalResponse;
 import com.captain.sprintaiintro.model.Question;
 
 /**
@@ -13,7 +14,7 @@ public interface OpenAIService {
 
     Answer getAnswer(Question question);
 
-    Answer getCapital(GetCapitalRequest getCapitalRequest);
+    GetCapitalResponse getCapital(GetCapitalRequest getCapitalRequest);
 
     Answer getCapitalWithInfo(GetCapitalRequest getCapitalRequest);
 }
