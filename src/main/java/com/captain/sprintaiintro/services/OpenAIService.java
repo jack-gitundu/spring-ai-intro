@@ -1,9 +1,6 @@
 package com.captain.sprintaiintro.services;
 
-import com.captain.sprintaiintro.model.Answer;
-import com.captain.sprintaiintro.model.GetCapitalRequest;
-import com.captain.sprintaiintro.model.GetCapitalResponse;
-import com.captain.sprintaiintro.model.Question;
+import com.captain.sprintaiintro.model.*;
 
 /**
  * Created by Jackson G. Mwaniki
@@ -16,5 +13,5 @@ public interface OpenAIService {
 
     GetCapitalResponse getCapital(GetCapitalRequest getCapitalRequest);
 
-    Answer getCapitalWithInfo(GetCapitalRequest getCapitalRequest);
+    GetCapitalWithInfoResponse getCapitalWithInfo(GetCapitalRequest getCapitalRequest);
 }
